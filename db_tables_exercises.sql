@@ -6,13 +6,19 @@ use employees;
 select database();
 SHOW tables;
 describe employees;
+-- int emp_nom date birth_date, varchar first,name, last_name, enum gender, date hire_date
+
 -- Which table(s) do you think contain a numeric type column? emp_no
 -- Which table(s) do you think contain a string type column? first_name, last name, gender
 -- Which table(s) do you think contain a date type column? birth_date, hire_date
 -- What is the relationship between the employees and the departments tables? No direct relationship
 
-describe dept_manager;
+-- describe dept_manager;
+-- int emp_no char dept_no date from_date date to_date
+
 describe departments;
+-- char dep_no varchar dept_name
+
 show create table dept_manager;
 -- code used for dept_manager
 -- CREATE TABLE `dept_manager` (
