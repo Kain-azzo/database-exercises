@@ -3,11 +3,11 @@ select database();
 show tables;
 describe albums;
 SELECT * FROM albums;
-SELECT name as 'low_selling_albums' FROM albums WHERE sales < 20;
+SELECT name as 'low_selling_albums',sales FROM albums WHERE sales < 20 order by sales desc;
 SELECT name FROM albums WHERE artist = 'Pink Floyd';
 SELECT genre FROM albums WHERE name = 'Nevermind';
 SELECT release_date FROM albums WHERE name = 'Sgt. Pepper\'s Lonely Hearts Club Band';
-SELECT name FROM albums WHERE release_date <= 2000 and release_date >= 1990;
+SELECT name FROM albums WHERE release_date < 2000 and release_date >= 1990;
 
 -- What is the primary key for the albums table? ID is the primary key
 
